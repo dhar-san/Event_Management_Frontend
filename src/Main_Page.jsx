@@ -14,7 +14,7 @@ function Main_Page() {
           <Link to="/Login" className='login_button'>LOGIN</Link> 
 
           <p className='or'>OR</p>
-          <p className='register_button'>REGISTER</p>
+          <Link to ='/Register' className='register_button'>REGISTER</Link>
         </div>
       </div>
     </>

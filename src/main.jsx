@@ -19,6 +19,8 @@ import Billie_concert from './Billie_concert.jsx'
 import ConformationBillie from './ConformationBillie.jsx'
 import Coldplay_concert from './Coldplay_concert.jsx'
 import ConformationColdPlay from './ConformationColdPlay.jsx'
+import Register from './Register_Page.jsx'      
+
 createRoot(document.getElementById('root')).render(
   <>
       <BrowserRouter>
@@ -39,8 +41,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/conformationPageBillie" element={<ConformationBillie/>}/>
         <Route path="/cold_concert" element={<Coldplay_concert/>}/>
         <Route path="/conformationPageColdPlay" element={<ConformationColdPlay/>}/>
-        
-
+     <Route path="/Register" element={<Register />} />
       </Routes>
     </BrowserRouter>
  </>
