@@ -20,6 +20,9 @@ import ConformationBillie from './ConformationBillie.jsx'
 import Coldplay_concert from './Coldplay_concert.jsx'
 import ConformationColdPlay from './ConformationColdPlay.jsx'
 import Register from './Register_Page.jsx'      
+import FoodPage from './FoodPage.jsx'
+import Food_fest1 from './Food_fest1.jsx'
+import ConformationFoodFest from './ConformationFoodFest1.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -41,7 +44,10 @@ createRoot(document.getElementById('root')).render(
         <Route path="/conformationPageBillie" element={<ConformationBillie/>}/>
         <Route path="/cold_concert" element={<Coldplay_concert/>}/>
         <Route path="/conformationPageColdPlay" element={<ConformationColdPlay/>}/>
-     <Route path="/Register" element={<Register />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/food_page" element={<FoodPage/>}/>
+        <Route path="/food_fest1" element={<Food_fest1/>}/>
+        <Route path="/conformationPageFoodfest1" element={<ConformationFoodFest/>}/>
       </Routes>
     </BrowserRouter>
  </>
