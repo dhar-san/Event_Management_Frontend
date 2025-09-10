@@ -26,7 +26,13 @@ import ConformationFoodFest from './ConformationFoodFest1.jsx'
 import Food_fest2 from './Food_fest2.jsx' 
 import ConformationFoodFest2 from './ConformationFoodFest2.jsx'
 import Food_fest3 from './Food_fest3.jsx'
-import ConformationFoodFest3 from './ConformationFoodFest3.jsx'     
+import ConformationFoodFest3 from './ConformationFoodFest3.jsx'   
+import Food_fest4 from './Food_fest4.jsx'  
+import ConformationFoodFest4 from './ConformationFoodFest4.jsx'
+import Food_fest5 from './Food_fest5.jsx'
+import ConformationFoodFest5 from './ConformationFoodFest5.jsx'
+import Food_fest6 from './Food_fest6.jsx'
+import ConformationFoodFest6 from './ConformationFoodFest6.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -56,6 +62,12 @@ createRoot(document.getElementById('root')).render(
         <Route path="/conformationPageFoodfest2" element={<ConformationFoodFest2/>}/>
         <Route path="/food_fest3" element={<Food_fest3/>}/>
         <Route path="/conformationPageFoodfest3" element={<ConformationFoodFest3/>}/>
+        <Route path='/food_fest4' element={<Food_fest4/>}/>
+        <Route path='/conformationPageFoodfest4' element={<ConformationFoodFest4/>}/>
+        <Route path='/food_fest5' element={<Food_fest5/>}/>
+        <Route path='/conformationPageFoodfest5' element={<ConformationFoodFest5/>}/>
+        <Route path='/food_fest6' element={<Food_fest6/>}/>
+        <Route path='/conformationPageFoodfest6' element={<ConformationFoodFest6/>}/>
       </Routes>
     </BrowserRouter>
  </>
