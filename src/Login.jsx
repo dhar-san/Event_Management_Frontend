@@ -8,7 +8,6 @@ function Login() {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const navigate = useNavigate();   // ✅ useNavigate hook
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -49,7 +48,7 @@ function Login() {
         </form>
       </div>
 
-      {message && <p style={{color:"red"}}>{message}</p>}
+      {message && <p style={{color:"red"}} className='Error_Text'>{message}</p>}
 
       <p className='or_text'>OR</p>
       <p><b>SIGN IT WITH</b></p>

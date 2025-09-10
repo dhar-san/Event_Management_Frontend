@@ -23,6 +23,10 @@ import Register from './Register_Page.jsx'
 import FoodPage from './FoodPage.jsx'
 import Food_fest1 from './Food_fest1.jsx'
 import ConformationFoodFest from './ConformationFoodFest1.jsx'
+import Food_fest2 from './Food_fest2.jsx' 
+import ConformationFoodFest2 from './ConformationFoodFest2.jsx'
+import Food_fest3 from './Food_fest3.jsx'
+import ConformationFoodFest3 from './ConformationFoodFest3.jsx'     
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -48,6 +52,10 @@ createRoot(document.getElementById('root')).render(
         <Route path="/food_page" element={<FoodPage/>}/>
         <Route path="/food_fest1" element={<Food_fest1/>}/>
         <Route path="/conformationPageFoodfest1" element={<ConformationFoodFest/>}/>
+        <Route path="/food_fest2" element={<Food_fest2/>}/>
+        <Route path="/conformationPageFoodfest2" element={<ConformationFoodFest2/>}/>
+        <Route path="/food_fest3" element={<Food_fest3/>}/>
+        <Route path="/conformationPageFoodfest3" element={<ConformationFoodFest3/>}/>
       </Routes>
     </BrowserRouter>
  </>

@@ -9,21 +9,21 @@ function FoodPage() {
          
           <div className='music_container1'>
               <Link to="/food_fest1" className="hiphopPage">
-                    <img  src="https://i.pinimg.com/1200x/c9/bb/46/c9bb465e77ff65fc1f0dfbf6aef6714c.jpg"  className="musicimage1" alt="Music Event"/>
+                    <img  src="https://i.pinimg.com/1200x/c9/bb/46/c9bb465e77ff65fc1f0dfbf6aef6714c.jpg"  className="musicimage1" alt="FOOD FEST"/>
                      </Link>
     
             
           </div>
            <div className='music_container2'>
-             <Link to="/anirudth_concert" className="hiphopPage">
-                <img  src="https://i.pinimg.com/736x/e9/22/b0/e922b0216d32439c5dd15418b5a0094e.jpg"  className="musicimage2" alt="Music Event"/>
+             <Link to="/food_fest2" className="hiphopPage">
+                <img  src="https://marketplace.canva.com/EAF0yHZXwm4/1/0/1131w/canva-green-retro-food-festival-poster-RMzIHWTEhl4.jpg"  className="musicimage2" alt="FOOD FEST"/>
               </Link>
             
             
           </div>
            <div className='music_container3'>
-             <Link to="/sakthishre_concert" className="hiphopPage">
-                    <img  src="https://i.pinimg.com/1200x/8e/ce/b8/8eceb83c1f166b02a8bbfd9baa79f56e.jpg"  className="musicimage3" alt="Music Event"/>
+             <Link to="/food_fest3" className="hiphopPage">
+                    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaWwfWy8E0MffKXqrk0RdL9-l8nbwEd_GWCQ&s"  className="musicimage3" alt="Music Event"/>
             </Link>
             
             
