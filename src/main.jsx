@@ -33,13 +33,6 @@ import Food_fest5 from './Food_fest5.jsx'
 import ConformationFoodFest5 from './ConformationFoodFest5.jsx'
 import Food_fest6 from './Food_fest6.jsx'
 import ConformationFoodFest6 from './ConformationFoodFest6.jsx'
-import HackathanPage from './Hackathon_Page/HackathanPage.jsx'
-import Hackathon_fest1 from './Hackathon/Hackathon_fests/Hackathon_fest1.jsx'
-import ConformationHackathon1 from './Hackathon/Conformation_Hackathon/ConformationHackathon1.jsx'
-import Hackathon_fest2 from './Hackathon/Hackathon_fests/Hackathon_fest2.jsx'
-import ConformationHackFest2 from './Hackathon/Conformation_Hackathon/ConformationHackathon2.jsx'
-
-
 
 createRoot(document.getElementById('root')).render(
   <>
