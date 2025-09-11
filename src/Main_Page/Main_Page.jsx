@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from './Login'
+import Login from "../Login/Login.jsx";
 import { Link } from 'react-router-dom'  
 
 function Main_Page() {

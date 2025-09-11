@@ -7,7 +7,7 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const navigate = useNavigate();   // ✅ useNavigate hook
+  const navigate = useNavigate();   
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -18,7 +18,7 @@ function Login() {
       setMessage(res.data.message);
 
       if (res.data.message === "Login successful") {
-        navigate("/event_home_page"); // ✅ smooth navigation, no reload
+        navigate("/event_home_page"); 
       }
     } catch (err) {
       setMessage("Server error, try again later");
