@@ -712,7 +712,6 @@ right:30px;
   bottom: 350px;
   left: 400px;
 }
-
 .bookEventBtnhackathon {
   display: inline-block;
   padding: 12px 35px;
@@ -742,7 +741,6 @@ right:30px;
   transform: translateY(1px);
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
-
 .hackathonproblemstatements{
   position: relative;
   left: 100px;
