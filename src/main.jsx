@@ -33,6 +33,11 @@ import Food_fest5 from './Food_Fest/Fests/Food_fest5.jsx'
 import ConformationFoodFest5 from './Food_Fest/Conformation_FoodFest/ConformationFoodFest5.jsx'
 import Food_fest6 from './Food_Fest/Fests/Food_fest6.jsx'
 import ConformationFoodFest6 from './Food_Fest/Conformation_FoodFest/ConformationFoodFest6.jsx'
+import HackathanPage from './Hackathon/Hackathon_Page/HackathanPage.jsx'
+import Hackathon_fest1 from './Hackathon/Hackathon_Fest/Hackathon_fest1.jsx'
+import ConformationHackathon1 from './Hackathon/Conformation_Hackathon/ConformationHackathon1.jsx'
+import Hackathon_fest2 from './Hackathon/Hackathon_Fest/Hackathon_fest2.jsx'
+import ConformationHackFest2 from './Hackathon/Conformation_Hackathon/ConformationHackathon2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -68,6 +73,11 @@ createRoot(document.getElementById('root')).render(
         <Route path='/conformationPageFoodfest5' element={<ConformationFoodFest5/>}/>
         <Route path='/food_fest6' element={<Food_fest6/>}/>
         <Route path='/conformationPageFoodfest6' element={<ConformationFoodFest6/>}/>
+        <Route path='/hackathon_page' element={<HackathanPage/>}/>
+        <Route path='/hackathonpage1' element={<Hackathon_fest1/>}/>
+        <Route path='/conformationPageHackathonfest1' element={<ConformationHackathon1/>}/>
+        <Route path='/hackathonpage2' element={<Hackathon_fest2/>}/>
+        <Route path='/conformationPageHackathonfest2' element={<ConformationHackFest2/>}/>
       </Routes>
     </BrowserRouter>
  </>
