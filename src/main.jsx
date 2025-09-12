@@ -37,8 +37,15 @@ import HackathanPage from './Hackathon/Hackathon_Page/HackathanPage.jsx'
 import Hackathon_fest1 from './Hackathon/Hackathon_Fest/Hackathon_fest1.jsx'
 import ConformationHackathon1 from './Hackathon/Conformation_Hackathon/ConformationHackathon1.jsx'
 import Hackathon_fest2 from './Hackathon/Hackathon_Fest/Hackathon_fest2.jsx'
-import ConformationHackFest2 from './Hackathon/Conformation_Hackathon/ConformationHackathon2.jsx'
-
+import ConformationHackathon2 from './Hackathon/Conformation_Hackathon/ConformationHackathon2.jsx'
+import Hackathon_fest3 from './Hackathon/Hackathon_Fest/Hackathon_fest3.jsx'
+import ConformationHackathon3 from './Hackathon/Conformation_Hackathon/ConformationHackathon3.jsx'
+import Hackathon_fest4 from './Hackathon/Hackathon_Fest/Hackathon_fest4.jsx'
+import ConformationHackathon4 from './Hackathon/Conformation_Hackathon/ConformationHackathon4.jsx' 
+import Hackathon_fest5 from './Hackathon/Hackathon_Fest/Hackathon_fest5.jsx'
+import ConformationHackathon5 from './Hackathon/Conformation_Hackathon/ConformationHackathon5.jsx'
+import Hackathon_fest6 from './Hackathon/Hackathon_Fest/Hackathon_fest6.jsx'
+import ConformationHackathon6 from './Hackathon/Conformation_Hackathon/ConformationHackathon6.jsx'
 createRoot(document.getElementById('root')).render(
   <>
       <BrowserRouter>
@@ -77,7 +84,15 @@ createRoot(document.getElementById('root')).render(
         <Route path='/hackathonpage1' element={<Hackathon_fest1/>}/>
         <Route path='/conformationPageHackathonfest1' element={<ConformationHackathon1/>}/>
         <Route path='/hackathonpage2' element={<Hackathon_fest2/>}/>
-        <Route path='/conformationPageHackathonfest2' element={<ConformationHackFest2/>}/>
+        <Route path='/conformationPageHackathonfest2' element={<ConformationHackathon2/>}/>
+        <Route path='/hackathonpage3' element={<Hackathon_fest3/>}/>
+        <Route path='/conformationPageHackathonfest3' element={<ConformationHackathon3/>}/>
+        <Route path='/hackathonpage4' element={<Hackathon_fest4/>}/>
+        <Route path='/conformationPageHackathonfest4' element={<ConformationHackathon4/>}/>
+        <Route path='/hackathonpage5' element={<Hackathon_fest5/>}/>
+        <Route path='/conformationPageHackathonfest5' element={<ConformationHackathon5/>}/>
+        <Route path='/hackathonpage6' element={<Hackathon_fest6/>}/>
+        <Route path='/conformationPageHackathonfest6' element={<ConformationHackathon6/>}/>
       </Routes>
     </BrowserRouter>
  </>

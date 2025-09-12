@@ -5,11 +5,11 @@ function Hackathon_fest2() {
   return (
     <div>
                    <>
-                    <h1>💻 INNOVATE 2026 – Hackathon Challenge</h1>
+                    <h1>🧠 BrainWave 2026</h1>
                     <br></br>
                     <div className='hiphop_details'>
                      <div className='image_containerhiphop'>
-                     <img  src="https://i.pinimg.com/1200x/c1/f9/42/c1f94250264c7c3f4f898f92a9b87e92.jpg"  className="musicimageaadhi" alt="Music Event"/>
+                     <img  src="https://i.pinimg.com/736x/95/04/ea/9504ea9721e01951bb73ddb781399abc.jpg"  className="musicimageaadhi" alt="Music Event"/>
                      </div>
                      <div className='details_event1hip'>
                       <h2 className='headhiphop'>📝 Project Titles </h2>
