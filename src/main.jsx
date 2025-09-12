@@ -46,6 +46,20 @@ import Hackathon_fest5 from './Hackathon/Hackathon_Fest/Hackathon_fest5.jsx'
 import ConformationHackathon5 from './Hackathon/Conformation_Hackathon/ConformationHackathon5.jsx'
 import Hackathon_fest6 from './Hackathon/Hackathon_Fest/Hackathon_fest6.jsx'
 import ConformationHackathon6 from './Hackathon/Conformation_Hackathon/ConformationHackathon6.jsx'
+import Donation_Page from './Donations/Donation_Page/Donation_Page.jsx'
+import Donation1 from './Donations/Donations _1-6/Donation1.jsx'
+import Donation2 from './Donations/Donations _1-6/Donation2.jsx'
+import Donation3 from './Donations/Donations _1-6/Donation3.jsx'
+import Donation4 from './Donations/Donations _1-6/Donation4.jsx'
+import Donation5 from './Donations/Donations _1-6/Donation5.jsx'
+import Donation6 from './Donations/Donations _1-6/Donation6.jsx' 
+import ConformationDonation1 from './Donations/Conformation_Donation/ConformationDonation1.jsx'
+import ConformationDonation2 from './Donations/Conformation_Donation/ConformationDonation2.jsx'
+import ConformationDonation3 from './Donations/Conformation_Donation/ConformationDonation3.jsx'
+import ConformationDonation4 from './Donations/Conformation_Donation/ConformationDonation4.jsx'
+import ConformationDonation5 from './Donations/Conformation_Donation/ConformationDonation5.jsx'
+import ConformationDonation6 from './Donations/Conformation_Donation/ConformationDonation6.jsx'
+
 createRoot(document.getElementById('root')).render(
   <>
       <BrowserRouter>
@@ -93,6 +107,19 @@ createRoot(document.getElementById('root')).render(
         <Route path='/conformationPageHackathonfest5' element={<ConformationHackathon5/>}/>
         <Route path='/hackathonpage6' element={<Hackathon_fest6/>}/>
         <Route path='/conformationPageHackathonfest6' element={<ConformationHackathon6/>}/>
+        <Route path='/donation_page' element={<Donation_Page/>}/>
+        <Route path='/donationpage1' element={<Donation1/>}/>
+        <Route path='/donationpage2' element={<Donation2/>}/>
+        <Route path='/donationpage3' element={<Donation3/>}/>
+        <Route path='/donationpage4' element={<Donation4/>}/>
+        <Route path='/donationpage5' element={<Donation5/>}/>
+        <Route path='/Donationpage6' element={<Donation6/>}/>
+        <Route path='/conformationDonation1' element={<ConformationDonation1/>}/>
+        <Route path='/conformationDonation2' element={<ConformationDonation2/>}/>
+        <Route path='/conformationDonation3' element={<ConformationDonation3/>}/>
+        <Route path='/conformationDonation4' element={<ConformationDonation4/>}/>
+        <Route path='/conformationDonation5' element={<ConformationDonation5/>}/>
+        <Route path='/conformationDonation6' element={<ConformationDonation6/>}/>
       </Routes>
     </BrowserRouter>
  </>
