@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-function ConformationHackathon2() {
+function ConformationHackathon4() {
   return (
     <div className="conformHiphop">
             <h1>CONFIRMATION PAGE</h1>
             <h5>PLEASE VERIFY CONFIRMATION & PACKAGE</h5>
             <br />
             <form>
-              <h4 className='Madchef'>🎯 Code Smart, Win Big</h4>
-              <input type='radio' placeholder='RS:2500'/>  RS:999
+              <h4 className='Madchef'>🔥 From Bug to Brilliance</h4>
+              <input type='radio' placeholder='RS:2500'/>  RS:1499
             </form>
       
     
@@ -32,4 +32,4 @@ function ConformationHackathon2() {
   )
 }
 
-export default ConformationHackathon2
+export default ConformationHackathon4
