@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Donation_Page() {
   return (
      <>
-     <h1>HACKATHON  EVENTS</h1>
+     <h1>DONATION EVENTS</h1>
     <div className='music_page_main_div'>
      
       <div className='music_container1'>

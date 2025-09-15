@@ -59,6 +59,8 @@ import ConformationDonation3 from './Donations/Conformation_Donation/Conformatio
 import ConformationDonation4 from './Donations/Conformation_Donation/ConformationDonation4.jsx'
 import ConformationDonation5 from './Donations/Conformation_Donation/ConformationDonation5.jsx'
 import ConformationDonation6 from './Donations/Conformation_Donation/ConformationDonation6.jsx'
+import Auction_Page from './Auction/Auction_page/Auction_Page.jsx'
+import Auction1 from './Auction/Auction _1-6/Auction1.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
@@ -120,6 +122,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/conformationDonation4' element={<ConformationDonation4/>}/>
         <Route path='/conformationDonation5' element={<ConformationDonation5/>}/>
         <Route path='/conformationDonation6' element={<ConformationDonation6/>}/>
+        <Route path='/auction_page' element={<Auction_Page/>}/>
+        <Route path='/auctionpage1' element={<Auction1/>}/>
       </Routes>
     </BrowserRouter>
  </>
