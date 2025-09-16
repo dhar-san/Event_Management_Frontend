@@ -66,7 +66,8 @@ import Auction3 from './Auction/Auction _1-6/Auction3.jsx'
 import Auction4 from './Auction/Auction _1-6/Auction4.jsx'
 import Auction5 from './Auction/Auction _1-6/Auction5.jsx'
 import Auction6 from './Auction/Auction _1-6/Auction6.jsx'
-
+import Events_Page from './Events/Events_Page/Events_Page.jsx'
+import Event1 from './Events/Events_1-6/Event1.jsx'
 createRoot(document.getElementById('root')).render(
   <>
       <BrowserRouter>
@@ -134,6 +135,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/auctionpage4' element={<Auction4/>}/>
         <Route path='/auctionpage5' element={<Auction5/>}/>
         <Route path='/auctionpage6' element={<Auction6/>}/>
+        <Route path='/Events_page' element={<Events_Page/>}/>
+        <Route path='/Eventpage1' element={<Event1/>}/>
       </Routes>
     </BrowserRouter>
  </>
