@@ -14,14 +14,14 @@ function Events_Page() {
         
       </div>
        <div className='music_container2'>
-         <Link to="/Auctionpage2" className="hiphopPage">
+         <Link to="/Eventpage2" className="hiphopPage">
             <img  src="https://static.vecteezy.com/system/resources/previews/040/812/815/non_2x/cocktail-party-banner-or-poster-template-for-networking-or-business-reception-with-aperitif-and-alcohol-drinks-invitation-leaflet-or-flyer-with-glasses-full-of-various-beverage-with-bubbles-vector.jpg"  className="musicimage2" alt="Music Event"/>
           </Link>
         
         
       </div>
        <div className='music_container3'>
-         <Link to="/Auctionpage3" className="hiphopPage">
+         <Link to="/Eventpage3" className="hiphopPage">
                 <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyr-2Pg39wyhTUJk-LXJFCVGocmRWhjn9_tA&s"  className="musicimage3" alt="Music Event"/>
         </Link>
         
@@ -29,7 +29,7 @@ function Events_Page() {
       </div>
 
     <div className='music_container4'>
-       <Link to="/Auctionpage4" className="hiphopPage">
+       <Link to="/Eventpage4" className="hiphopPage">
         <img  src="https://files.codegrape.com/199891.jpg"  className="musicimage4" alt="Music Event"/>
       </Link>
             
@@ -37,14 +37,14 @@ function Events_Page() {
     </div>
 
     <div className='music_container5'>
-       <Link to="/Auctionpage5" className="hiphopPage">
+       <Link to="/Eventpage5" className="hiphopPage">
                 <img  src="https://www.shutterstock.com/image-vector/christmas-party-poster-template-shining-260nw-1198234690.jpg"  className="musicimage5" alt="Music Event"/>
       </Link>
             
             
     </div>
     <div className='music_container6'>
-       <Link to="/Auctionpage6" className="hiphopPage">
+       <Link to="/Eventpage6" className="hiphopPage">
                 <img  src="https://www.shutterstock.com/shutterstock/photos/676250194/display_1500/stock-vector-rock-night-party-poster-flyer-vintage-styled-vector-illustration-676250194.jpg"  className="musicimage6" alt="Music Event"/>
                  </Link>
             
