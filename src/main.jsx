@@ -73,6 +73,13 @@ import Event3 from './Events/Events_1-6/Event3.jsx'
 import Event4 from './Events/Events_1-6/Event4.jsx'
 import Event5 from './Events/Events_1-6/Event5.jsx'
 import Event6 from './Events/Events_1-6/Event6.jsx'
+import Meeting_Page from './Meetings/Meeting_Page/Meeting_Page.jsx'
+import Meeting1 from './Meetings/Meeting1.jsx'
+import Meeting2 from './Meetings/Meetings/Meeting2.jsx'
+import Meeting3 from './Meetings/Meeting3.jsx'
+import Meeting4 from './Meetings/Meeting4.jsx'
+import Meeting5 from './Meetings/Meeting5.jsx'
+import Meeting6 from './Meetings/Meeting6.jsx'
 createRoot(document.getElementById('root')).render(
   <>
       <BrowserRouter>
@@ -147,6 +154,13 @@ createRoot(document.getElementById('root')).render(
          <Route path='/Eventpage4' element={<Event4/>}/>
          <Route path='/Eventpage5' element={<Event5/>}/>
          <Route path='/Eventpage6' element={<Event6/>}/>
+         <Route path='buisness_page' element={<Meeting_Page/>}/>
+         <Route path='/Meetingpage1' element={<Meeting1/>}/>
+         <Route path='/Meetingpage2' element={<Meeting2/>}/>
+         <Route path='/Meetingpage3' element={<Meeting3/>}/>
+         <Route path='/Meetingpage4' element={<Meeting4/>}/>
+         <Route path='/Meetingpage5' element={<Meeting5/>}/>
+         <Route path='/Meetingpage6' element={<Meeting6/>}/>
       </Routes>
     </BrowserRouter>
  </>
