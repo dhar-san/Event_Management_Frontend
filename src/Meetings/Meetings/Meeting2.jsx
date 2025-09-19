@@ -16,8 +16,8 @@ function Meeting2() {
           </div>
           <div className='Birthday'>
 
-          <h2 className='BirthdayTitle'>You Are Invited</h2>
-          <h1 className='BirthdayTitle'>TECHNOLOGY CONFERENCE</h1>
+          <h2 className='Business'>📢You Are Invited📢</h2>
+          <h1 className='BusinessTitle'>TECHNOLOGY CONFERENCE</h1>
           <p className='BirthdayFont'>📅 Date: 25th February 2025</p>
           <p className='BirthdayFont'>⏰ Time: Starts at 3:00 PM</p>
           <p className='BirthdayFont'>📍 Venue: Tech Convention Center, Bengaluru</p>

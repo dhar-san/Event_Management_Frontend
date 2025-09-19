@@ -16,8 +16,8 @@ function Meeting1() {
           </div>
           <div className='Birthday'>
 
-          <h2 className='BirthdayTitle'>Petrol Energies International and Annual</h2>
-          <h1 className='BirthdayTitle'>Official Business Meeting 2020</h1>
+          <h1 className='BusinessTitle1'>Official Business Meeting 2020:</h1>
+          <h2 className='Business1'>Petrol Energies International and Annual</h2>
           <p className='BirthdayFont'>📅 Date: September 30 & 31, 2020</p>
           <p className='BirthdayFont'>⏰ Time: 10:00 AM – 4:00 PM</p>
           <p className='BirthdayFont'>📍 Venue: The Queen’s Hall Center, Detroit, MI</p>
