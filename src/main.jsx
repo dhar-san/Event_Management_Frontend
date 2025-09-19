@@ -80,6 +80,7 @@ import Meeting3 from './Meetings/Meeting3.jsx'
 import Meeting4 from './Meetings/Meeting4.jsx'
 import Meeting5 from './Meetings/Meeting5.jsx'
 import Meeting6 from './Meetings/Meeting6.jsx'
+import Movie_Page from './Movies/Movie_Page/Movie_Page.jsx'
 createRoot(document.getElementById('root')).render(
   <>
       <BrowserRouter>
@@ -161,6 +162,7 @@ createRoot(document.getElementById('root')).render(
          <Route path='/Meetingpage4' element={<Meeting4/>}/>
          <Route path='/Meetingpage5' element={<Meeting5/>}/>
          <Route path='/Meetingpage6' element={<Meeting6/>}/>
+         <Route path='/movie_page' element={<Movie_Page/>}/>
       </Routes>
     </BrowserRouter>
  </>
