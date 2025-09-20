@@ -2,7 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {BrowserRouter,Routes,Route,Link}from 'react-router-dom'
 import './index.css'
-import App from './App.jsx'
 import Main_Page from "./Main_Page/Main_Page.jsx";
 import Login from "./Login/Login.jsx";
 import EventHomePage from './EventHomePage/EventHomePage.jsx'
