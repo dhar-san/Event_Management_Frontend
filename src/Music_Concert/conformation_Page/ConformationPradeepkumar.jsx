@@ -37,7 +37,7 @@ function ConformationPradeepkumar() {
   };
 
   if (showTicket) {
-    return (
+  return (
       <div className="ticket-page">
         <div className="ticket-container">
           <div className="ticket-header">
@@ -153,7 +153,7 @@ function ConformationPradeepkumar() {
           <Link to="/pradeepkumar_concert" className="back-button">
             <FaArrowLeft className="back-icon" />
             Back to Event
-          </Link>
+      </Link>
           <h1>Confirm Your Booking</h1>
           <p>Please review your selection and proceed to payment</p>
         </div>
@@ -237,8 +237,8 @@ function ConformationPradeepkumar() {
                 })}
               </div>
             </div>
-          </div>
-
+    </div>
+    
           {selectedPackage && selectedPayment && (
             <div className="booking-summary">
               <h3>Booking Summary</h3>

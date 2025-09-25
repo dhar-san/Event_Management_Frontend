@@ -1,59 +1,214 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FaCode, FaArrowLeft, FaMapMarkerAlt, FaCalendarAlt, FaClock, FaTicketAlt, FaStar } from 'react-icons/fa'
 
 function HackathanPage() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const hackathonEvents = [
+    {
+      id: 1,
+      title: 'INNOVATE 2026 – Tech Revolution',
+      organizer: 'Tech Innovation Hub',
+      date: '2024-04-01',
+      time: '9:00 AM',
+      venue: 'IIT Madras, Chennai',
+      price: '₹2,000',
+      image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop',
+      link: '/hackathon_fest1',
+      rating: 4.8,
+      category: 'Tech Innovation'
+    },
+    {
+      id: 2,
+      title: 'BRAINWAVE 2026 – AI Challenge',
+      organizer: 'AI Research Center',
+      date: '2024-04-08',
+      time: '10:00 AM',
+      venue: 'Anna University, Chennai',
+      price: '₹1,500',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981d?q=80&w=1200&auto=format&fit=crop',
+      link: '/hackathon_fest2',
+      rating: 4.9,
+      category: 'AI/ML'
+    },
+    {
+      id: 3,
+      title: 'FUTURETECH 2026 – Blockchain',
+      organizer: 'Blockchain Society',
+      date: '2024-04-15',
+      time: '8:00 AM',
+      venue: 'VIT University, Chennai',
+      price: '₹2,500',
+      image: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop',
+      link: '/hackathon_fest3',
+      rating: 4.7,
+      category: 'Blockchain'
+    },
+    {
+      id: 4,
+      title: 'CODESTORM 2026 – Ultimate Hack',
+      organizer: 'Tech Innovation Hub',
+      date: '2024-04-22',
+      time: '9:00 AM',
+      venue: 'Infosys Convention Center, Bangalore',
+      price: '₹3,000',
+      image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop',
+      link: '/hackathon_fest4',
+      rating: 4.8,
+      category: 'Full Stack'
+    },
+    {
+      id: 5,
+      title: 'NEXTGEN HACK 2026 – Code Create',
+      organizer: 'NextGen Tech Solutions',
+      date: '2024-04-29',
+      time: '10:00 AM',
+      venue: 'NASSCOM Startup Warehouse, Bengaluru',
+      price: '₹3,500',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop',
+      link: '/hackathon_fest5',
+      rating: 4.9,
+      category: 'Startup Tech'
+    },
+    {
+      id: 6,
+      title: 'GAMEJAM 2026 – Code Play Innovate',
+      organizer: 'Gaming Innovation Lab',
+      date: '2024-05-06',
+      time: '11:00 AM',
+      venue: 'Hyderabad Gaming Arena, HITEC City',
+      price: '₹4,000',
+      image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop',
+      link: '/hackathon_fest6',
+      rating: 4.6,
+      category: 'Game Development'
+    }
+  ];
+
+  const filteredEvents = hackathonEvents.filter(event =>
+    event.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    event.organizer.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    event.category.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
-     <>
-     <h1>HACKATHON  EVENTS</h1>
-    <div className='music_page_main_div'>
-     
-      <div className='music_container1'>
-          <Link to="/hackathonpage1" className="hiphopPage">
-                <img  src="https://i.pinimg.com/1200x/c1/f9/42/c1f94250264c7c3f4f898f92a9b87e92.jpg"  className="musicimage1" alt="Music Event"/>
-                 </Link>
-
-        
-      </div>
-       <div className='music_container2'>
-         <Link to="/hackathonpage2" className="hiphopPage">
-            <img  src="https://i.pinimg.com/736x/95/04/ea/9504ea9721e01951bb73ddb781399abc.jpg"  className="musicimage2" alt="Music Event"/>
+    <div className="music-page">
+      {/* Header */}
+      <div className="page-header">
+        <div className="header-content">
+          <Link to="/event_home_page" className="back-button">
+            <FaArrowLeft className="back-icon" />
+            Back to Events
           </Link>
-        
-        
-      </div>
-       <div className='music_container3'>
-         <Link to="/hackathonpage3" className="hiphopPage">
-                <img  src="https://i.pinimg.com/736x/1f/d8/ab/1fd8ab4a3b823b6fc02984142a0a1779.jpg"  className="musicimage3" alt="Music Event"/>
-        </Link>
-        
-        
+          <div className="header-title">
+            <FaCode className="page-icon" />
+            <h1>Hackathons</h1>
+            <p>Code, create, and innovate with the best</p>
+          </div>
+          <div className="search-section">
+            <div className="search-container">
+              <input
+                type="text"
+                placeholder="Search hackathons, technologies, or venues..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="search-input"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
-    <div className='music_container4'>
-       <Link to="/hackathonpage4" className="hiphopPage">
-        <img  src="https://i.pinimg.com/1200x/a6/07/35/a60735f39ac3becbceae4df80c036b27.jpg"  className="musicimage4" alt="Music Event"/>
-      </Link>
-            
-            
-    </div>
+      {/* Events Grid */}
+      <div className="events-container">
+        <div className="events-grid">
+          {filteredEvents.map((event) => (
+            <Link key={event.id} to={event.link} className="event-card">
+              <div className="event-image-container">
+                <img src={event.image} alt={event.title} className="event-image" />
+                <div className="event-badge">
+                  <span className="category-badge">{event.category}</span>
+                </div>
+                <div className="event-overlay">
+                  <div className="rating">
+                    <FaStar className="star-icon" />
+                    <span>{event.rating}</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="event-content">
+                <div className="event-header">
+                  <h3 className="event-title">{event.title}</h3>
+                  <p className="event-artist">{event.organizer}</p>
+                </div>
+                
+                <div className="event-details">
+                  <div className="detail-item">
+                    <FaCalendarAlt className="detail-icon" />
+                    <span>{new Date(event.date).toLocaleDateString('en-IN', { 
+                      weekday: 'short', 
+                      year: 'numeric', 
+                      month: 'short', 
+                      day: 'numeric' 
+                    })}</span>
+                  </div>
+                  <div className="detail-item">
+                    <FaClock className="detail-icon" />
+                    <span>{event.time}</span>
+                  </div>
+                  <div className="detail-item">
+                    <FaMapMarkerAlt className="detail-icon" />
+                    <span>{event.venue}</span>
+                  </div>
+                </div>
+                
+                <div className="event-footer">
+                  <div className="price">
+                    <FaTicketAlt className="ticket-icon" />
+                    <span className="price-amount">{event.price}</span>
+                  </div>
+                  <div className="book-button">
+                    <span>Register Now</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
 
-    <div className='music_container5'>
-       <Link to="/hackathonpage5" className="hiphopPage">
-                <img  src="https://i.pinimg.com/736x/5e/e5/24/5ee5248fe49db285c2665d9ec9608b42.jpg"  className="musicimage5" alt="Music Event"/>
-      </Link>
-            
-            
+        {filteredEvents.length === 0 && searchQuery && (
+          <div className="no-results">
+            <FaCode className="no-results-icon" />
+            <h3>No hackathons found</h3>
+            <p>Try searching with different keywords</p>
+          </div>
+        )}
+      </div>
+
+      {/* Featured Section */}
+      <div className="featured-section">
+        <h2>Why Choose PLANIT for Hackathons?</h2>
+        <div className="features-grid">
+          <div className="feature-item">
+            <FaTicketAlt className="feature-icon" />
+            <h3>Best Prices</h3>
+            <p>Get the best deals on hackathon registrations with our exclusive partnerships</p>
+          </div>
+          <div className="feature-item">
+            <FaMapMarkerAlt className="feature-icon" />
+            <h3>Premium Venues</h3>
+            <p>Access to the most prestigious tech venues and innovation centers</p>
+          </div>
+          <div className="feature-item">
+            <FaStar className="feature-icon" />
+            <h3>Top Mentors</h3>
+            <p>Learn from industry experts and successful entrepreneurs</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className='music_container6'>
-       <Link to="/hackathonpage6" className="hiphopPage">
-                <img  src="https://i.pinimg.com/736x/25/2c/b8/252cb8ca9ac86553efb5f617a749a1d6.jpg"  className="musicimage6" alt="Music Event"/>
-                 </Link>
-            
-            
-    </div>
-      
-    </div>
-    </>
   )
 }
 

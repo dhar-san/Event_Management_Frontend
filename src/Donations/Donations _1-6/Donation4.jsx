@@ -1,50 +1,197 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FaArrowLeft, FaMapMarkerAlt, FaCalendarAlt, FaClock, FaUsers, FaStar, FaHeart, FaShare, FaTicketAlt, FaHandsHelping } from 'react-icons/fa'
 
 function Donation4() {
-  return (
-    <div>
-               <>
-                    <h1>👗 WARM HEARTS 2026 – Dress Donation Drive</h1>
-                    <br></br>
-                  <div className='hiphop_details'>
-                 
-                   <div className='image_containerhiphop'>
-                   <img  src="https://i.pinimg.com/736x/43/68/ab/4368ab0da8b03b1bb7401b192222d590.jpg"  className="musicimageaadhi" alt="Dress Donation Event"/>
-                   </div>
-                   <div className='details_event1hip'>
-                    <h2 className='headhiphop'>📝 Event Highlights </h2>
-                    <div className='content_hiphop'>
-                    <h2>1️⃣ Share Warmth</h2>
-                    <br />
-                    <h3 className='donationtatements'>Donate clean, gently-used clothes to help families in need stay comfortable through all seasons.</h3>
-                    <br /> 
-                    <h2>2️⃣ Community Impact</h2>
-                    <br />
-                    <h3 className='donationtatements'>Every garment reaches shelters and underprivileged communities directly and transparently.</h3>
-                    <br />
-                    <h3>REWARDS</h3>
-                    <br />
-                    <h3>🥇 Appreciation Certificate for each donor</h3>
-                    <br />
-                    <h3>🥈 Complimentary Refreshments & Thank-You Badge</h3>
-                    <br />
-                    <h3>🥉 Special Mention for Bulk Contributors</h3>
-                    <br />
-                    <h3>📍 Venue: Anna University, Chennai</h3>
-                    <br />
-                    <h3>📅 Date: 20th – 21st July 2026</h3>
-                    <br />
-                    <h3>⏰ Time: 10:00 AM – 6:00 PM</h3>
-                    <h3>👥 Open to All Donors</h3>
-                  </div>
-                   <Link to="/conformationDonation4" className='bookEventBtnhackathon'>BOOK EVENT</Link>
-                   </div>
-                  </div>
-                  </>
-              
-            </div>
+  const [isLiked, setIsLiked] = useState(false);
+  const [isShared, setIsShared] = useState(false);
 
+  const eventDetails = {
+    title: "WARM HEARTS 2026 – DRESS DONATION DRIVE",
+    organizer: "Life Savers Foundation",
+    venue: "Anna University, Chennai, Tamil Nadu",
+    date: "20th – 21st July 2026",
+    time: "10:00 AM – 6:00 PM",
+    crowd: "500+ donors",
+    rating: 4.7,
+    image: "https://i.pinimg.com/736x/43/68/ab/4368ab0da8b03b1bb7401b192222d590.jpg",
+    description: "Donate clean, gently-used clothes to help families in need stay comfortable through all seasons.",
+    eventHighlights: [
+      "Share Warmth - Donate clean, gently-used clothes",
+      "Community Impact - Direct distribution to shelters",
+      "Transparent Process - Every garment tracked",
+      "Appreciation Certificate for each donor"
+    ],
+    ticketPrices: {
+      donor: 0,
+      volunteer: 0,
+      supporter: 0,
+      sponsor: 500
+    }
+  };
+
+  return (
+    <div className="event-detail-page">
+      {/* Header */}
+      <div className="event-header">
+        <div className="header-content">
+          <Link to="/donation_page" className="back-button">
+            <FaArrowLeft className="back-icon" />
+            Back to Donation Events
+          </Link>
+          
+          <div className="header-actions">
+            <button 
+              className={`action-btn ${isLiked ? 'liked' : ''}`}
+              onClick={() => setIsLiked(!isLiked)}
+            >
+              <FaHeart className={`heart-icon ${isLiked ? 'filled' : ''}`} />
+              {isLiked ? 'Liked' : 'Like'}
+            </button>
+            <button 
+              className={`action-btn ${isShared ? 'shared' : ''}`}
+              onClick={() => setIsShared(!isShared)}
+            >
+              <FaShare className="share-icon" />
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="event-content">
+        <div className="event-container">
+          {/* Event Image and Basic Info */}
+          <div className="event-hero">
+            <div className="event-image-container">
+              <img src={eventDetails.image} alt={eventDetails.title} className="event-image" />
+              <div className="event-badge">
+                <FaHandsHelping className="badge-icon" />
+                <span>Dress Donation</span>
+              </div>
+              <div className="event-rating">
+                <FaStar className="star-icon" />
+                <span>{eventDetails.rating}</span>
+              </div>
+            </div>
+            
+            <div className="event-info">
+              <h1 className="event-title">{eventDetails.title}</h1>
+              <p className="event-artist">by {eventDetails.organizer}</p>
+              <p className="event-description">{eventDetails.description}</p>
+              
+              <div className="event-stats">
+                <div className="stat-item">
+                  <FaUsers className="stat-icon" />
+                  <span>{eventDetails.crowd}</span>
+                </div>
+                <div className="stat-item">
+                  <FaStar className="stat-icon" />
+                  <span>{eventDetails.rating}/5 Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Event Details */}
+          <div className="event-details-section">
+            <div className="details-grid">
+              <div className="detail-card">
+                <FaCalendarAlt className="detail-icon" />
+                <div className="detail-content">
+                  <h3>Date</h3>
+                  <p>{eventDetails.date}</p>
+                </div>
+              </div>
+              
+              <div className="detail-card">
+                <FaClock className="detail-icon" />
+                <div className="detail-content">
+                  <h3>Time</h3>
+                  <p>{eventDetails.time}</p>
+                </div>
+              </div>
+              
+              <div className="detail-card">
+                <FaMapMarkerAlt className="detail-icon" />
+                <div className="detail-content">
+                  <h3>Venue</h3>
+                  <p>{eventDetails.venue}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Event Highlights */}
+          <div className="artists-section">
+            <h2>Event Highlights</h2>
+            <div className="artists-grid">
+              <div className="main-artist">
+                <div className="artist-card featured">
+                  <div className="artist-avatar">
+                    <FaHandsHelping className="artist-icon" />
+                  </div>
+                  <h3>Community Impact</h3>
+                  <p>Making a Difference</p>
+                </div>
+              </div>
+              
+              <div className="guest-artists">
+                {eventDetails.eventHighlights.map((highlight, index) => (
+                  <div key={index} className="artist-card">
+                    <div className="artist-avatar">
+                      <FaHandsHelping className="artist-icon" />
+                    </div>
+                    <h4>{highlight}</h4>
+                    <p>Donation Benefit</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Participation Options */}
+          <div className="pricing-section">
+            <h2>Participation Options</h2>
+            <div className="pricing-grid">
+              <div className="pricing-card">
+                <h3>Donor</h3>
+                <div className="price">Free</div>
+                <p>Donate clothes and make a difference</p>
+              </div>
+              <div className="pricing-card popular">
+                <div className="popular-badge">Most Popular</div>
+                <h3>Volunteer</h3>
+                <div className="price">Free</div>
+                <p>Help organize and support the event</p>
+              </div>
+              <div className="pricing-card">
+                <h3>Supporter</h3>
+                <div className="price">Free</div>
+                <p>Spread awareness and encourage others</p>
+              </div>
+              <div className="pricing-card">
+                <h3>Sponsor</h3>
+                <div className="price">₹500</div>
+                <p>Support the cause financially</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="action-section">
+            <Link to="/conformationDonation4" className="btn btn-primary btn-large">
+              <FaTicketAlt className="btn-icon" />
+              Register for Event
+            </Link>
+            <button className="btn btn-secondary">
+              Download Info Pack
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

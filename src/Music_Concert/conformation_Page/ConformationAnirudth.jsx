@@ -37,7 +37,7 @@ function ConformationAnirudth() {
   };
 
   if (showTicket) {
-    return (
+  return (
       <div className="ticket-page">
         <div className="ticket-container">
           <div className="ticket-header">
@@ -153,7 +153,7 @@ function ConformationAnirudth() {
           <Link to="/anirudth_concert" className="back-button">
             <FaArrowLeft className="back-icon" />
             Back to Event
-          </Link>
+      </Link>
           <h1>Confirm Your Booking</h1>
           <p>Please review your selection and proceed to payment</p>
         </div>

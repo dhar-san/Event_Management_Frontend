@@ -37,7 +37,7 @@ function ConfomationHiphop() {
   };
 
   if (showTicket) {
-    return (
+  return (
       <div className="ticket-page">
         <div className="ticket-container">
           <div className="ticket-header">

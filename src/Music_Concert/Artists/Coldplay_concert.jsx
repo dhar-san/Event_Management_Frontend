@@ -177,7 +177,7 @@ function Coldplay_concert() {
                 <p>General admission with good sound</p>
               </div>
             </div>
-          </div>
+           </div>
 
           {/* Action Buttons */}
           <div className="action-section">
@@ -189,8 +189,8 @@ function Coldplay_concert() {
               Add to Calendar
             </button>
           </div>
-        </div>
-      </div>
+           </div>
+          </div>
     </div>
   )
 }
